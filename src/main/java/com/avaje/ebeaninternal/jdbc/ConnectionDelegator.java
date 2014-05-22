@@ -27,31 +27,6 @@ public class ConnectionDelegator implements Connection {
     this.delegate = delegate;
   }
 
-  @Override
-  public void setSchema(String schema) throws SQLException {
-    delegate.setSchema(schema);
-  }
-
-  @Override
-  public String getSchema() throws SQLException {
-    return delegate.getSchema();
-  }
-
-  @Override
-  public void abort(Executor executor) throws SQLException {
-    delegate.abort(executor);
-  }
-
-  @Override
-  public void setNetworkTimeout(Executor executor, int milliseconds) throws SQLException {
-    delegate.setNetworkTimeout(executor, milliseconds);
-  }
-
-  @Override
-  public int getNetworkTimeout() throws SQLException {
-    return delegate.getNetworkTimeout();
-  }
-
   public Statement createStatement() throws SQLException {
     return delegate.createStatement();
   }

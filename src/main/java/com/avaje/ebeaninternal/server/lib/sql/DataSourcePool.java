@@ -233,11 +233,6 @@ public class DataSourcePool implements DataSource {
     }
 
     
-    @Override
-    public java.util.logging.Logger getParentLogger() throws SQLFeatureNotSupportedException {
-      throw new SQLFeatureNotSupportedException("We do not support java.util.logging");
-    }
-
     /**
      * Create the DataSourcePoolListener if there is one.
      */
